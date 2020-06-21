@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<script src="functions.js"></script>
+
+<head>
+    <title>Lieke & Patrick's Ultimate Showdown of Ultimate Destiny</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body style="background-color:lightgray;">
+    <h1>roll the dice 5x6</h1>
+    <div id="enterName">
+        <select id="names" name="thelist" style="display:block">
+            <option disabled selected value> -- wie ben je! -- </option>
+            <option>Lieke</option>
+            <option>Patrick</option>
+        </select>
+        <button type="button" onClick="nameSelectButtonPressed()">Spelen</button>
+    </div>
+    <div id="play" style="display:none">
+        <label id="name">playing as:</label><br><br><br><br>
+        <div id="stats">
+            <div id="sessionStats">
+                <div class="theStats">Session stats</div><br>
+                <div><label id="total">Attempts: N/A</label></div>
+                <br>
+                <div><label id="best">Best: N/A</label></div>
+                <br>
+                <div><label id="worst">Worst: N/A</label></div>
+                <br>
+                <div><label id="average">Average: N/A</label></div>
+                <br>
+            </div>
+            <div id="allTimeStats">
+                <div class="theStats">All time stats</div><br>
+                <div><label id="allTimeAttempts">Attempts: N/A</label></div>
+                <br>
+                <div><label id="allTimeBest">Best: N/A</label></div>
+                <br>
+                <div><label id="allTimeWorst">Worst: N/A</label></div>
+                <br>
+                <div><label id="allTimeWonders">One-roll wonders: N/A</label></div>
+                <br>
+                <div><label id="triesSinceLastWonder">Attempts since last wonder: N/A</label></div>
+                <br>
+                <div><label id="leastAttemptsRequired">Least attempts required: N/A</label></div>
+                <br>
+            </div>
+        </div>
+
+
+        <div>
+            <button id="clickMe" type="button" onClick="buttonPressed()">Click Me!</button>
+        </div>
+        <textarea id="messages" rows="20" cols="75" readonly></textarea>
+    </div>
+</body>
+
+</html>
